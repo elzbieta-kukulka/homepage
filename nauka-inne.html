@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html">O mnie</a>
+            <a href="nauka-html.html">Nauka html-a</a>
+            <a href="nauka-css.html">Nauka css</a>
+            <a href="nauka-js.html">Nauka JS</a>
+            <a href="nauka-inne.html">Inne</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1 class="main-heading">Inne</h1>
+        </header>
+
+        <section>
+            <h2>Jak działa Internet i przeglądarka</h2>
+            <p>Komunikacja przeglądarka-serwer odbywa się na zasadach request-response</p>
+            <p>Protokół, który obsługuje strony internetowe i ich zawartość to http (aktualnie coraz częściej
+                HTTP/2).<br />HTTP - HyperText Transfer Protocol - to protokół do transportowania htmla (i całej reszty,
+                którą widzisz
+                na stronach</p>
+            <p>HTTPS - Hypertext Transfer Protocol Secure = szyfrowany, bezpieczny</p>
+            <p>URL - Uniform Resource Locator</p>
+
+            <p>
+                Kody odpowiedzi:
+                <ul>
+                    <li>1xx - hold on</li>
+                    <li>2xx - here you go</li>
+                    <li>3xx - go away - szukasz w złym miejscu - przekieruję Cię w dobre. 301-przekierowania
+                    </li>
+                    <li>4xx - you fucked up - 404-nie mam tego czego potrzebujesz</li>
+                    <li>5xx - I fucked up - błąd wewnętrzny serwera</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Czym jest root - /(slash)</h2>
+            <p>w którym miejscu przzeglądarka powinna szukać zasobu.</p>
+            <p>--> ścieżka bezwględna src="/img/wtf.svg"</p>
+            <p>--> ścieżka względna bez slasha src="img/wtf.svg"</p>
+            <p>Brak / z przodu drugiej ścieżki uczynił adres do zasobu relatywnym, dlatego przeglądarka szukała pliku w
+                aktualnym "katalogu"</p>
+
+        </section>
+        <section>
+            <h2>Terminal</h2>
+            <p>Otwarcie - Menu Start - wpisujemy cdm - wiersz polecenia</p>
+            <ul>
+                <li>dir - pokazuje wszystko co znajduje się w tym katalogu</li>
+                <li>cd C:\ - wejdź do dysku C (cd=change directory)</li>
+                <li>cd d+tab - pokazuje w co mogę wejść (np d jak dev)</li>
+                <li>mkdir - utwórz katalog</li>
+                <li>code . - uruchom Visual Studio Code w tym katalogu</li>
+                <li>cd .. - przejście do katalogu wyżej</li>
+                <li>cd - wyświetlenie aktualnej ścieżki</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>Wszystkie prawa zakazane przeze mnie</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html">O mnie</a>
+            <a href="nauka-html.html">Nauka html-a</a>
+            <a href="nauka-css.html">Nauka css</a>
+            <a href="nauka-js.html">Nauka JS</a>
+            <a href="nauka-inne.html">Inne</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1 class="main-heading">CSS</h1>
+            <img src="portfolio-2.jpg" alt="Portfolio">
+        </header>
+
+        <section>
+            <h2>Co to jest, składnia i dodawanie stylów do dokumentu</h2>
+            <p>CSS = Cascading Style Sheet - Kaskadowe arkusze stylów - odpowiadają za prezentację, wpływa na wygląd
+                elementów HTML na ekranie, ale też wydrukach</p>
+            <p>
+                Składnia CSS to reguły: selektor { właściwość: wartość;
+                }
+            </p>
+            <p>Dodanie stylów do html:</p>
+            <ul>
+                <li>w head tag style i między nim reguły</li>
+                <li>w head link href="adres" rel="stylesheet" type="text/css"</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Prawdziwe selektory</h2>
+            <p>1. .(kropka) to selektor klasy - znacznik class="name">treść /> - odwołanie to .name {własćiwość:
+                wartość}</p>
+            <p>2. #(hash) - selektor id - znacznik id="name"> treść /> - jedno id na stronie</p>
+        </section>
+        <section>
+            <h2>Specyficzność w CSS</h2>
+            <p>!important - nadpisuje wszystkie reguły</p>
+            <p>styl liniowy style=""</p>
+            <p>#name - selektor id</p>
+            <p>.name - selektor klasy</p>
+            <p>element</p>
+            <p>Jeśli specyficzność jest równa - pierwszeństwo ma selektor "bliżej" elementu. Wniosek: <b>dodawać klasy
+                    do
+                    elementów i unikać zagnieżdżania.</b></p>
+            <h3>Nazewnictwo klas:</h3>
+            <ul>
+                <li>używaj pojedyńczych słów
+                </li>
+                <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
+                <li>startuj z małej litery np. header, a nie Header</li>
+                <li>nie zaczynaj od cyfry</li>
+                <li>jeśli musisz użyć dwóch słów, użyj tzw. kebab-case np news-listing</li>
+                <li>staraj się, żeby element miał jedną klasę (nie zwiększaj specyficznośći bez potrzeby</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>Wszystkie prawa zakazane przeze mnie</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

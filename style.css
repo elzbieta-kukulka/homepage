@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(187, 187, 73);
+}
+
+.header {
+    background: gray;
+}
+
+.main-header {
+    color: navy;
+}
+
+.about-me {
+    color: red;
+}
+
+.main-heading {
+    color: orangered;
+}
+
+.projects {
+    color: whitesmoke;
+}
