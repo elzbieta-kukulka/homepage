@@ -66,7 +66,69 @@
                 <li>staraj się, żeby element miał jedną klasę (nie zwiększaj specyficznośći bez potrzeby</li>
             </ul>
         </section>
+        <section>
+            <h2>Display, wymiary, overflow</h2>
+            <p>div - nie ma znaczenia semantycznego, używamy gdy chcemy "opakować" (tylko, kiedy nie istnieje odpowiedni
+                semantyczny znacznik)</p>
+            <p>Właściwość display:</p>
+            <ul>
+                <li>display: block - elementy ustawiają się jedno pod drugim</li>
+                <li>display: inline - wyświetlany liniowo, zajmuje tyle miejsca, ile zajmuje content</li>
+                <li>display: inline-block - zachowuje się jak element liniowy, ale dostaje właściwości elementu
+                    blokowego, bo normalnie element liniowy ich nie ma. Czyli:</li>
+                <ul>
+                    <li>width - szerokość</li>
+                    <li>height - wysokość</li>
+                    <li>max-width/max-height - domyślnie na 100%, częśćiej używany max-width</li>
+                    <li>min-width/min-height</li>
+                </ul>
+            </ul>
+            <p>Właściwość overflow:
+                <ul>
+                    <li>overflow: hidden - ucina, chowa wszytsko co wystaje</li>
+                    <li>overflow: visible - domyślna wartość</li>
+                    <li>overflow: auto - dokłada scroll w elemencie</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Jednostki:</h2>
+            <ul>
+                <li>0 - zapisujemy bez jednostek</li>
+                <li>px - podstawowa jednostka np 600px</li>
+                <li>% - % szerokości lub wysokości elementu rodzica</li>
+                <li>vw - viewport width - szerokość okna</li>
+                <li>viewport height - wysokość oknanp 100vh - cała wysokość okna</li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                BOX MODEL
+            </h2>
+            <h3>PADDING</h3>
+            <p>wewnętrzny margines - odpowiadaa za to, o ile musi być odsunięty element od elementu, który ma padding
+            </p>
+            <p>Zapis: padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; odpowiada padding:
+                2px 2px 2px 2px; lub wartości "lustrzane" - padding: 2px 2px; lub jeśli wszystkie wartości są takie same
+                to padding: 2px;</p>
+            <h3>BORDER</h3>
+            <p>to też część elementu. Zapis pełny/zapis skrótwoy jak przy paddingu:</p>
+            <p>border-width: 1px 2px 3px 4px lub 10px lub 10px 20px</p>
+            <p>border-style: solid lub dotted</p>
+            <p>border-color: #fff</p>
+            <p>lub border: 2px solid #fff</p>
+            <p>lub border-top: 3px solid hotpink; i każde po kolei jeśli mają być inne ramki.</p>
+            <h3>MARGIN</h3>
+            <p>margines - nie jest częścią elementu, działa przy właściwościach blokowych, odpowiada za to, o ile możemy
+                się odsunąć od innych elementów</p>
+            <ul>
+                <li>zapisujemy tak samo jak padding,</li>
+                <li>marginesy się sumują</li>
+                <li>własność auto - margin: 20px auto - elementy się wyśrodkowują, przy domyślnym display: block,
+                    zadziała tylko jeśli szerokość jest zdefiniowana</li>
+            </ul>
 
+        </section>
     </main>
     <footer>Wszystkie prawa zakazane przeze mnie</footer>
     <script src="main.js"></script>
