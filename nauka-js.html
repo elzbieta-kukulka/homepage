@@ -1,62 +1,98 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav>
-            <a href="index.html">O mnie</a>
-            <a href="nauka-html.html">Nauka html-a</a>
-            <a href="nauka-css.html">Nauka css</a>
-            <a href="nauka-js.html">Nauka JS</a>
-            <a href="nauka-inne.html">Inne</a>
-        </nav>
+      <nav>
+        <a href="index.html">O mnie</a>
+        <a href="nauka-html.html">Nauka html-a</a>
+        <a href="nauka-css.html">Nauka css</a>
+        <a href="nauka-js.html">Nauka JS</a>
+        <a href="nauka-inne.html">Inne</a>
+      </nav>
     </header>
     <main>
-        <header>
-            <h1 class="main-heading">JavaScript</h1>
-        </header>
+      <header>
+        <h1 class="main-heading">JavaScript</h1>
+      </header>
 
-        <section>
-            <h2>ECMAScript 2015+(ES6+)</h2>
-            <p>Jest to ustandaryzowany przez organizację ECMA skryptowany język programowania</p>
-            <p>JavaScript implementuje rzeczy ze specyfikacji ECMAScript</p>
-            <p>JS składa się z:
-                <ul>
-                    <li>wartości - dla JS to to, czym liczby dla matematyki</li>
-                    <li>literały</li>
-                    <li>operacje porównywania
-                    </li>
-                    <li>zmienne</li>
-                    <li>funkcje</li>
-                    <li>obiekty</li>
-                </ul>
-            </p>
-            <p>Pliki zawierające kod JS mają rozszerzenie .js. Podobnie jak style mają też swój znacznik - script,
-                dodajemy go na samym dole HTML tuż przed zamknięciem znacznika body - script src="...">zamnknięcie
-                script</p>
-        </section>
-        <section>
-            <h2>Zmienna</h2>
-            <p>const name = "ela'; - stworzenie powiązania między nazwą a zmienną
-            </p>
-            <p>const age = 32;</p>
-            <p>Backtick/backquote - ` - używamy, gdy chcemy użyć literału np. console.log(`Nazywam się ${name} i mam
-                ${age} lat`)</p>
+      <section>
+        <h2>ECMAScript 2015+(ES6+)</h2>
+        <p>
+          Jest to ustandaryzowany przez organizację ECMA skryptowany język
+          programowania
+        </p>
+        <p>JavaScript implementuje rzeczy ze specyfikacji ECMAScript</p>
+        <p>JS składa się z:</p>
+        <ul>
+          <li>wartości - dla JS to to, czym liczby dla matematyki</li>
+          <li>literały</li>
+          <li>operacje porównywania</li>
+          <li>zmienne</li>
+          <li>funkcje</li>
+          <li>obiekty</li>
+        </ul>
 
-        </section>
-
-
+        <p>
+          Pliki zawierające kod JS mają rozszerzenie .js. Podobnie jak style
+          mają też swój znacznik - script, dodajemy go na samym dole HTML tuż
+          przed zamknięciem znacznika body - script src="...">zamnknięcie script
+        </p>
+      </section>
+      <section>
+        <h2>Zmienna</h2>
+        <p>
+          const name = "ela'; - stworzenie powiązania między nazwą a zmienną
+        </p>
+        <p>const age = 32;</p>
+        <p>
+          Backtick/backquote - ` - używamy, gdy chcemy użyć literału np.
+          console.log(`Nazywam się ${name} i mam ${age} lat`)
+        </p>
+      </section>
+      <section>
+        <h2>Typy danych i immutability</h2>
+        <p>
+          Zmienna to takie połączenie z naszym wszechświatem wartości.
+          <strong>Zmienna to nie wartość!</strong>
+        </p>
+        <ul>
+          <li>const - zmienne mające stałe połączenie z jedną wartością</li>
+          <li>
+            let - zmienne, których połączenie możemy przepinać, ale definiujemy
+            tylko raz, np. let isHappy = false; isHappy = true;
+          </li>
+        </ul>
+        <p>
+          Do zmiennej można przepisać wszystko kiedy ją definiujemy. Zmienne w
+          JS są jak młody pelikan: "łykną" wszystko.
+        </p>
+        <h2>Typy proste w JS (primitives)</h2>
+        <ul>
+          <li>String - tekst, otaczany ' lub "</li>
+          <li>Number - liczba</li>
+          <li>Bigint - duża liczba, większa niż 2 do potęgi 53</li>
+          <li>boolean - true lub false</li>
+          <li>null - wartość celowo niezdefiniowana</li>
+          <li>undefined - brak definicji</li>
+          <li>symbol - tworzy "unikalne opakowanie"</li>
+        </ul>
+        <p>Sorawdzanie jakiego typu jest zmienna - type of nazwaZmiennej</p>
+        <h2>IMMUTABILITY (niezmienność, niemutowalność)</h2>
+        <p>
+          Nie możemy zmieniać wartości primitive value w JS. To co zmieniamy to
+          połączenie między nimi, a zmiennymi.
+        </p>
+      </section>
     </main>
     <footer>Wszystkie prawa zakazane przeze mnie</footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

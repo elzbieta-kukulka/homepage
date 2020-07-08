@@ -1,19 +1,19 @@
 body {
-    background-color: rgb(187, 187, 73);
+  background-color: rgb(187, 187, 73);
 }
 
 .header {
-    background: gray;
+  background: gray;
 }
 
 .about-me {
-    color: red;
+  color: red;
 }
 
 .main-heading {
-    color: orangered;
+  color: orangered;
 }
 
 .projects {
-    color: whitesmoke;
+  color: whitesmoke;
 }
