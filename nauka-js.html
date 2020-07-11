@@ -21,18 +21,20 @@
       </nav>
     </header>
     <main>
-      <header>
-        <h1 class="main-heading">JavaScript</h1>
+      <header class="main-heading">
+        <h1 class="main-heading__title">JavaScript</h1>
       </header>
 
-      <section>
-        <h2>ECMAScript 2015+(ES6+)</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">ECMAScript 2015+(ES6+)</h2>
+        <p class="section__description">
           Jest to ustandaryzowany przez organizację ECMA skryptowany język
           programowania
         </p>
-        <p>JavaScript implementuje rzeczy ze specyfikacji ECMAScript</p>
-        <p>JS składa się z:</p>
+        <p class="section__description">
+          JavaScript implementuje rzeczy ze specyfikacji ECMAScript
+        </p>
+        <p class="section__description">JS składa się z:</p>
         <ul>
           <li>wartości - dla JS to to, czym liczby dla matematyki</li>
           <li>literały</li>
@@ -42,26 +44,26 @@
           <li>obiekty</li>
         </ul>
 
-        <p>
+        <p class="section__description">
           Pliki zawierające kod JS mają rozszerzenie .js. Podobnie jak style
           mają też swój znacznik - script, dodajemy go na samym dole HTML tuż
           przed zamknięciem znacznika body - script src="...">zamnknięcie script
         </p>
       </section>
-      <section>
-        <h2>Zmienna</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Zmienna</h2>
+        <p class="section__description">
           const name = "ela'; - stworzenie powiązania między nazwą a zmienną
         </p>
-        <p>const age = 32;</p>
-        <p>
+        <p class="section__description">const age = 32;</p>
+        <p class="section__description">
           Backtick/backquote - ` - używamy, gdy chcemy użyć literału np.
           console.log(`Nazywam się ${name} i mam ${age} lat`)
         </p>
       </section>
-      <section>
-        <h2>Typy danych i immutability</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Typy danych i immutability</h2>
+        <p class="section__description">
           Zmienna to takie połączenie z naszym wszechświatem wartości.
           <strong>Zmienna to nie wartość!</strong>
         </p>
@@ -72,11 +74,11 @@
             tylko raz, np. let isHappy = false; isHappy = true;
           </li>
         </ul>
-        <p>
+        <p class="section__description">
           Do zmiennej można przepisać wszystko kiedy ją definiujemy. Zmienne w
           JS są jak młody pelikan: "łykną" wszystko.
         </p>
-        <h2>Typy proste w JS (primitives)</h2>
+        <h2 class="section__title">Typy proste w JS (primitives)</h2>
         <ul>
           <li>String - tekst, otaczany ' lub "</li>
           <li>Number - liczba</li>
@@ -86,15 +88,19 @@
           <li>undefined - brak definicji</li>
           <li>symbol - tworzy "unikalne opakowanie"</li>
         </ul>
-        <p>Sorawdzanie jakiego typu jest zmienna - type of nazwaZmiennej</p>
-        <h2>IMMUTABILITY (niezmienność, niemutowalność)</h2>
-        <p>
+        <p class="section__description">
+          Sorawdzanie jakiego typu jest zmienna - type of nazwaZmiennej
+        </p>
+        <h2 class="section__title">
+          IMMUTABILITY (niezmienność, niemutowalność)
+        </h2>
+        <p class="section__description">
           Nie możemy zmieniać wartości primitive value w JS. To co zmieniamy to
           połączenie między nimi, a zmiennymi.
         </p>
       </section>
     </main>
-    <footer>Wszystkie prawa zakazane przeze mnie</footer>
+    <footer class="footer">Wszystkie prawa zakazane przeze mnie</footer>
     <script src="main.js"></script>
   </body>
 </html>

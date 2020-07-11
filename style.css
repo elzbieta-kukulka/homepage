@@ -2,13 +2,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
 .header {
-  background: gray;
+  text-align: center;
 }
 
 .navigation {
-  background: hsl(78, 47%, 58%);
+  background: #a9cbb7;
   padding: 10px;
+  text-align: center;
 }
 
 .navigation__link {
@@ -23,15 +29,26 @@ body {
   font-weight: bold;
 }
 
+.main-heading__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #5e565a;
+}
+
+.main-heading__image {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+}
 .section {
-  max-width: 1000px;
   margin: 10px auto;
   padding: 10px;
   border: 1px solid gray;
+  border-radius: 20px;
 }
 
 .section__title {
-  color: rgb(78, 78, 207);
+  color: #7d83ff;
 }
 
 .section__subtitle {
@@ -41,4 +58,11 @@ body {
 
 .section__description {
   font-size: 15px;
+}
+
+.footer {
+  background-color: #a9cbb7;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
 }

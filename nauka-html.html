@@ -10,70 +10,80 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a href="index.html">O mnie</a>
-        <a href="nauka-html.html">Nauka html-a</a>
-        <a href="nauka-css.html">Nauka css</a>
-        <a href="nauka-js.html">Nauka JS</a>
-        <a href="nauka-inne.html">Inne</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >O mnie</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html-a</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka JS</a>
+        <a class="navigation__link" href="nauka-inne.html">Inne</a>
       </nav>
     </header>
     <main>
-      <header>
-        <h1 class="main-heading">Czego się uczę</h1>
-        <img src="images/images.jpg" alt="Technologie" />
+      <header class="main-heading">
+        <h1 class="main-heading__title">Czego się uczę</h1>
+        <img
+          class="main-heading__image"
+          src="images/images.jpg"
+          alt="Technologie"
+        />
       </header>
 
-      <section>
-        <h2>HTML</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">HTML</h2>
+        <p class="section__description">
           ang. HyperText Markup Language - język znaczników. Odpowiada za treść
           ( a właściwie za jej właściwe opakowanie). Treść czyli to wszystko co
           jest nośnikiem informacji. CONTENT IS THE KING
         </p>
-        <p>
+        <p class="section__description">
           HTML to szkielet strony internetowej. Jedna głowa - head i jedno ciało
           - body.<br />
           main - główna część dokumentu<br />
         </p>
-        <h3>Tag- znaczniki</h3>
-        <p>
-          section - sekcja dokumentu - każda sekcja powinna mieć nagłówek<br />article
-          - samodzielne treści<br />header - nagłówek
-          dokumentu/sekcji/artykułu<br />footer - stopka<br />h1-h6 - tekstowe
-          nagłówki<br />
-          p - paragraf
-        </p>
-        <p>
-          br lub br/ - nowa linia
-        </p>
-        <p>
+        <h3 class="section__subtitle">Tag- znaczniki</h3>
+        <ul>
+          <li>
+            section - sekcja dokumentu - każda sekcja powinna mieć nagłówek
+          </li>
+          <li>article - samodzielne treści</li>
+          <li>header - nagłówek dokumentu/sekcji/artykułu</li>
+          <li>footer - stopka</li>
+          <li>h1-h6 - tekstowe nagłówki</li>
+          <li>p - paragraf</li>
+          <li>br lub br/ - nowa linia</li>
+        </ul>
+
+        <p class="section__description">
           <b>b</b> i <i>i</i> - nie mają dużego znaczenia semantycznego - służą
           do wyróznienia teksstu ztekstu
         </p>
-        <p>
+        <p class="section__description">
           <strong>strong</strong> podkreśla wysoką istotność i poważność frazy w
           nim zawartej a <em>em</em>
         </p>
         podkreśla, że tekst może mieć inne znaczenie np. ironia
-        <h3>Linki łącza wewnątrz dokumentu</h3>
-        <p>a href="nazwa" target="">opis łącza /a</p>
-        <h3>Nawigacja w obrębie dokumentu</h3>
-        <p>
+        <h3 class="section__subtitle">Linki łącza wewnątrz dokumentu</h3>
+        <p class="section__description">
+          a href="nazwa" target="">opis łącza /a
+        </p>
+        <h3 class="section__subtitle">Nawigacja w obrębie dokumentu</h3>
+        <p class="section__description">
           element id="mój-identyfikator" - atrybut id identyfikuje element
           (przydaje się do nawigacji w obrębie dokumentu) - np. section
           id="notatki" --> a href="#notatki>... koniec a
         </p>
-        <h3>NAV - powtarzalna część nawigacji</h3>
+        <h3 class="section__subtitle">NAV - powtarzalna część nawigacji</h3>
       </section>
-      <section>
-        <h2>Visual Studio Code</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Visual Studio Code</h2>
+        <p class="section__description">
           CTRL+SHIFT+P - wpisać format - wybrać format dokument
         </p>
       </section>
-      <section>
-        <h3>Nazywanie rzeczy</h3>
+      <section class="section">
+        <h2 class="section__title">Nazywanie rzeczy</h2>
 
         <ul>
           <li>nazwy zapisujemy bez polskich znaków</li>
@@ -82,7 +92,7 @@
           <li>trzymamy się jednego schematu</li>
         </ul>
 
-        <p>Konwencja nazewnictwa</p>
+        <p class="section__description">Konwencja nazewnictwa</p>
         <ul>
           <li>camelCase - mySuperBoldHeader</li>
           <li>kebab-case - my-super-bold-header - używany do atrybutu id</li>
@@ -91,7 +101,7 @@
         </ul>
       </section>
     </main>
-    <footer>Wszystkie prawa zakazane przeze mnie</footer>
+    <footer class="footer">Wszystkie prawa zakazane przeze mnie</footer>
     <script src="main.js"></script>
   </body>
 </html>

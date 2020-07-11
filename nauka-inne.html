@@ -22,21 +22,21 @@
           </nav>
     </header>
     <main>
-        <header>
-            <h1 class="main-heading">Inne</h1>
+        <header class="main-heading">
+            <h1 class="main-heading__title">Inne</h1>
         </header>
 
-        <section>
-            <h2>Jak działa Internet i przeglądarka</h2>
-            <p>Komunikacja przeglądarka-serwer odbywa się na zasadach request-response</p>
-            <p>Protokół, który obsługuje strony internetowe i ich zawartość to http (aktualnie coraz częściej
+        <section class="section">
+            <h2 class="section__title">Jak działa Internet i przeglądarka</h2>
+            <p class="section__description">Komunikacja przeglądarka-serwer odbywa się na zasadach request-response</p>
+            <p class="section__description">Protokół, który obsługuje strony internetowe i ich zawartość to http (aktualnie coraz częściej
                 HTTP/2).<br />HTTP - HyperText Transfer Protocol - to protokół do transportowania htmla (i całej reszty,
                 którą widzisz
                 na stronach</p>
-            <p>HTTPS - Hypertext Transfer Protocol Secure = szyfrowany, bezpieczny</p>
-            <p>URL - Uniform Resource Locator</p>
+            <p class="section__description">HTTPS - Hypertext Transfer Protocol Secure = szyfrowany, bezpieczny</p>
+            <p class="section__description">URL - Uniform Resource Locator</p>
 
-            <p>
+            <p class="section__description">
                 Kody odpowiedzi:
                 <ul>
                     <li>1xx - hold on</li>
@@ -48,18 +48,18 @@
                 </ul>
             </p>
         </section>
-        <section>
-            <h2>Czym jest root - /(slash)</h2>
-            <p>w którym miejscu przzeglądarka powinna szukać zasobu.</p>
-            <p>--> ścieżka bezwględna src="/img/wtf.svg"</p>
-            <p>--> ścieżka względna bez slasha src="img/wtf.svg"</p>
-            <p>Brak / z przodu drugiej ścieżki uczynił adres do zasobu relatywnym, dlatego przeglądarka szukała pliku w
+        <section class="section">
+            <h2 class="section__title">Czym jest root - /(slash)</h2>
+            <p class="section__description">w którym miejscu przzeglądarka powinna szukać zasobu.</p>
+            <p class="section__description">--> ścieżka bezwględna src="/img/wtf.svg"</p>
+            <p class="section__description">--> ścieżka względna bez slasha src="img/wtf.svg"</p>
+            <p class="section__description">Brak / z przodu drugiej ścieżki uczynił adres do zasobu relatywnym, dlatego przeglądarka szukała pliku w
                 aktualnym "katalogu"</p>
 
         </section>
-        <section>
-            <h2>Terminal</h2>
-            <p>Otwarcie - Menu Start - wpisujemy cdm - wiersz polecenia</p>
+        <section class="section">
+            <h2 class="section__title">Terminal</h2>
+            <p class="section__description">Otwarcie - Menu Start - wpisujemy cdm - wiersz polecenia</p>
             <ul>
                 <li>dir - pokazuje wszystko co znajduje się w tym katalogu</li>
                 <li>cd C:\ - wejdź do dysku C (cd=change directory)</li>
@@ -70,9 +70,9 @@
                 <li>cd - wyświetlenie aktualnej ścieżki</li>
             </ul>
         </section>
-        <section>
-            <h2>GIT</h2>
-            <p>Git składa się z repozytorium, czyli projekt, czyli wszystkie pliki. Komendy:
+        <section class="section">
+            <h2 class="section__title">GIT</h2>
+            <p class="section__description">Git składa się z repozytorium, czyli projekt, czyli wszystkie pliki. Komendy:
                 <ul>
                     <li>git --version - wersja</li>
                     <li>konfiguracja naszego gita, tylko raz, można poprawić nadpisując - git config --global user.name
@@ -91,14 +91,14 @@
                 </ul>
             </p>
         </section>
-        <section>
-            <h2>GitHub</h2>
-            <p>Portal, który pozwala trzymać repozytorium poza komputerem. Zakładanie repozytorium - + new repository,
+        <section class="section">
+            <h2 class="section__title">GitHub</h2>
+            <p class="section__description">Portal, który pozwala trzymać repozytorium poza komputerem. Zakładanie repozytorium - + new repository,
                 wpisujemy nazwę, reszta bez zmian, create, kopiujemy do terminala dwie komendy.</p>
-            <p>Wrzucanie kodu na GitHuba: <br />git add . / git commit -m "opis zmian" / git push</p>
+            <p class="section__description">Wrzucanie kodu na GitHuba: <br />git add . / git commit -m "opis zmian" / git push</p>
         </section>
     </main>
-    <footer>Wszystkie prawa zakazane przeze mnie</footer>
+    <footer class="footer">Wszystkie prawa zakazane przeze mnie</footer>
     <script src="main.js"></script>
 </body>
 
