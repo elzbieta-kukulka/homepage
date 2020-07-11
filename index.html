@@ -10,11 +10,14 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a href="index.html">O mnie</a>
-        <a href="nauka-html.html">Nauka html-a</a>
-        <a href="nauka-css.html">Nauka css</a>
-        <a href="nauka-inne.html">Inne</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >O mnie</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html-a</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka JS</a>
+        <a class="navigation__link" href="nauka-inne.html">Inne</a>
       </nav>
     </header>
     <main>
@@ -23,30 +26,30 @@
         <img src="images/Blog_Front-End-Dev.jpg" alt="Jestę frontenderem" />
       </header>
 
-      <section>
-        <h2 class="about-me">Kilka słów o mnie</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Kilka słów o mnie</h2>
+        <p class="section__description">
           Tak, znowu uczę się programowania. Ciekawe co z tego wyniknie.
           <a href="#my-progress">Mój progres</a>
         </p>
       </section>
-      <section>
-        <h2>Co się zmieniło od ostatniego razu?</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Co się zmieniło od ostatniego razu?</h2>
+        <p class="section__title">
           Hmmm.... niewiele, tylko urodziłam synka ;p jestem teraz mamą na
           pełnym etacie i próbuje odnaleźć kim jeszcze chcę być
         </p>
       </section>
-      <section id="my-progress">
-        <h3>Czego dziś się nauczyłam?</h3>
-        <h4>1.07.2020</h4>
+      <section class="section" id="my-progress">
+        <h2 class="section__title">Czego dziś się nauczyłam?</h2>
+        <h3>1.07.2020</h3>
         <p>
           Właśnie napisałam swoją pierwszą stronę i wogóle trochę kodu od ponad
           roku! Zaraz zrobię kawkę i odpalę lolejny tydzień z kursu. Mój kurs
           jest trochę przyspieszony, bo... kurs się dawno skończył, a ja robię
           go dopiero teraz. widocznie teraz jest na to czas
         </p>
-        <h4>4.07.2020</h4>
+        <h3>4.07.2020</h3>
         <p>
           Programowanie to zamiana ludzkiego języka na język zrozumiały przez
           komputer. Język programowania ma swoją składnię, gramatykę,

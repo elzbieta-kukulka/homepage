@@ -10,12 +10,14 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a href="index.html">O mnie</a>
-        <a href="nauka-html.html">Nauka html-a</a>
-        <a href="nauka-css.html">Nauka css</a>
-        <a href="nauka-js.html">Nauka JS</a>
-        <a href="nauka-inne.html">Inne</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >O mnie</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html-a</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka JS</a>
+        <a class="navigation__link" href="nauka-inne.html">Inne</a>
       </nav>
     </header>
     <main>
@@ -24,46 +26,48 @@
         <img src="images/portfolio-2.jpg" alt="Portfolio" />
       </header>
 
-      <section>
-        <h2>Co to jest, składnia i dodawanie stylów do dokumentu</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">
+          Co to jest, składnia i dodawanie stylów do dokumentu
+        </h2>
+        <p class="section__description">
           CSS = Cascading Style Sheet - Kaskadowe arkusze stylów - odpowiadają
           za prezentację, wpływa na wygląd elementów HTML na ekranie, ale też
           wydrukach
         </p>
-        <p>
+        <p class="section__description">
           Składnia CSS to reguły: selektor { właściwość: wartość; }
         </p>
-        <p>Dodanie stylów do html:</p>
+        <p class="section__description">Dodanie stylów do html:</p>
         <ul>
           <li>w head tag style i między nim reguły</li>
           <li>w head link href="adres" rel="stylesheet" type="text/css"</li>
         </ul>
       </section>
-      <section>
-        <h2>Prawdziwe selektory</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Prawdziwe selektory</h2>
+        <p class="section__description">
           1. .(kropka) to selektor klasy - znacznik class="name">treść /> -
           odwołanie to .name {własćiwość: wartość}
         </p>
-        <p>
+        <p class="section__description">
           2. #(hash) - selektor id - znacznik id="name"> treść /> - jedno id na
           stronie
         </p>
       </section>
-      <section>
-        <h2>Specyficzność w CSS</h2>
+      <section class="section">
+        <h2 class="section__title">Specyficzność w CSS</h2>
         <p>!important - nadpisuje wszystkie reguły</p>
         <p>styl liniowy style=""</p>
         <p>#name - selektor id</p>
         <p>.name - selektor klasy</p>
         <p>element</p>
-        <p>
+        <p class="section__description">
           Jeśli specyficzność jest równa - pierwszeństwo ma selektor "bliżej"
           elementu. Wniosek:
           <b>dodawać klasy do elementów i unikać zagnieżdżania.</b>
         </p>
-        <h3>Nazewnictwo klas:</h3>
+        <h3 class="section_subtitle">Nazewnictwo klas:</h3>
         <ul>
           <li>używaj pojedyńczych słów</li>
           <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
@@ -78,13 +82,13 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Display, wymiary, overflow</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__title">Display, wymiary, overflow</h2>
+        <p class="section__description">
           div - nie ma znaczenia semantycznego, używamy gdy chcemy "opakować"
           (tylko, kiedy nie istnieje odpowiedni semantyczny znacznik)
         </p>
-        <p>Właściwość display:</p>
+        <p class="section__description">Właściwość display:</p>
         <ul>
           <li>display: block - elementy ustawiają się jedno pod drugim</li>
           <li>
@@ -106,15 +110,15 @@
             <li>min-width/min-height</li>
           </ul>
         </ul>
-        <p>Właściwość overflow:</p>
+        <p class="section__description">Właściwość overflow:</p>
         <ul>
           <li>overflow: hidden - ucina, chowa wszytsko co wystaje</li>
           <li>overflow: visible - domyślna wartość</li>
           <li>overflow: auto - dokłada scroll w elemencie</li>
         </ul>
       </section>
-      <section>
-        <h2>Jednostki:</h2>
+      <section class="section">
+        <h2 class="section__title">Jednostki:</h2>
         <ul>
           <li>0 - zapisujemy bez jednostek</li>
           <li>px - podstawowa jednostka np 600px</li>
@@ -123,36 +127,38 @@
           <li>viewport height - wysokość oknanp 100vh - cała wysokość okna</li>
         </ul>
       </section>
-      <section>
-        <h2>
+      <section class="section">
+        <h2 class="section__title">
           BOX MODEL
         </h2>
-        <h3>PADDING</h3>
-        <p>
-          wewnętrzny margines - odpowiadaa za to, o ile musi być odsunięty
+        <h3 class="section__subtitle">PADDING</h3>
+        <p class="section__description">
+          Wewnętrzny margines - odpowiadaa za to, o ile musi być odsunięty
           element od elementu, który ma padding
         </p>
-        <p>
+        <p class="section__description">
           Zapis: padding-top: 2px; padding-right: 2px; padding-bottom: 2px;
           padding-left: 2px; odpowiada padding: 2px 2px 2px 2px; lub wartości
           "lustrzane" - padding: 2px 2px; lub jeśli wszystkie wartości są takie
           same to padding: 2px;
         </p>
-        <h3>BORDER</h3>
-        <p>
-          to też część elementu. Zapis pełny/zapis skrótwoy jak przy paddingu:
+        <h3 class="section__subtitle">BORDER</h3>
+        <p class="section__description">
+          To też część elementu. Zapis pełny/zapis skrótwoy jak przy paddingu:
         </p>
-        <p>border-width: 1px 2px 3px 4px lub 10px lub 10px 20px</p>
-        <p>border-style: solid lub dotted</p>
-        <p>border-color: #fff</p>
-        <p>lub border: 2px solid #fff</p>
-        <p>
+        <p class="section__description">
+          border-width: 1px 2px 3px 4px lub 10px lub 10px 20px
+        </p>
+        <p class="section__description">border-style: solid lub dotted</p>
+        <p class="section__description">border-color: #fff</p>
+        <p class="section__description">lub border: 2px solid #fff</p>
+        <p class="section__description">
           lub border-top: 3px solid hotpink; i każde po kolei jeśli mają być
           inne ramki.
         </p>
-        <h3>MARGIN</h3>
-        <p>
-          margines - nie jest częścią elementu, działa przy właściwościach
+        <h3 class="section__subtitle">MARGIN</h3>
+        <p class="section__description">
+          Margines - nie jest częścią elementu, działa przy właściwościach
           blokowych, odpowiada za to, o ile możemy się odsunąć od innych
           elementów
         </p>
@@ -165,17 +171,17 @@
             zdefiniowana
           </li>
         </ul>
-        <h3>BOX-SIZING</h3>
-        <p>
+        <h3 class="section__subtitle">BOX-SIZING</h3>
+        <p class="section__description">
           content-box - domyślna wartość - oznacza to, że jeśli zdefiniujemy
           szerokość to jest to szerokość contentu i nie wpływa na szerokość
           paddingu i borderu
         </p>
-        <p>
+        <p class="section__description">
           border-box - definiujemy szerokość całego elementu w co wlicza się
           border, padding, a content jest liczony sam
         </p>
-        <h3>POSITION</h3>
+        <h3 class="section__subtitle">POSITION</h3>
         <ul>
           <li>static - domyślna wartość</li>
           <li>
@@ -196,19 +202,21 @@
             przez top, WAŻNE: rodzic nie może mieć overflow!,
           </li>
         </ul>
-        <p>
+        <p class="section__description">
           <strong
             >Przy absolute i przy fixed szerokość jest dopasowana jak w
             szerokośći inline-block, czyli trzeba ją zdefiniować.</strong
           >
         </p>
-        <h3>FLOAT</h3>
-        <p>Float nie służy do budowania layoutów</p>
-        <p>
+        <h3 class="section__subtitle">FLOAT</h3>
+        <p class="section__description">
+          Float nie służy do budowania layoutów
+        </p>
+        <p class="section__description">
           float: left - element blokowy zachowuje się jakby miał własność
           inline-block, treść opływa ten element ze zdefiniowanej strony
         </p>
-        <p>
+        <p class="section__description">
           Sposoby na radzenie sobie jeśli tekstu jest za mało: w html pod
           tekstem dodajemy diva pustego o klasie clear, a w CSS .clear {clear:
           both lub left lub right;} lub nie dodajemy diva, tylko do rodzica

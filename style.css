@@ -1,19 +1,44 @@
 body {
-  background-color: rgb(187, 187, 73);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
   background: gray;
 }
 
-.about-me {
-  color: red;
+.navigation {
+  background: hsl(78, 47%, 58%);
+  padding: 10px;
 }
 
-.main-heading {
-  color: orangered;
+.navigation__link {
+  display: inline-block;
+  color: black;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.projects {
-  color: whitesmoke;
+.navigation__link--homepage {
+  font-weight: bold;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.section__title {
+  color: rgb(78, 78, 207);
+}
+
+.section__subtitle {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.section__description {
+  font-size: 15px;
 }
