@@ -99,6 +99,30 @@
           połączenie między nimi, a zmiennymi.
         </p>
       </section>
+      <section class="section">
+        <h2 class="section__title">DOMowe przedszkole</h2>
+        <p class="section__description">
+          DOM - ang. document object model. Plik HTML to nie DOM. Źródło strony
+          to nie DOM, ale to co widzimy w devtoolsach to DOM. JS lubi DOM, może
+          modyfikować DOM.
+        </p>
+        <p class="section__description">
+          Żeby podpiąć się pod elementy domu używamy metody:
+          querySelector('.selector') - zwraca node (węzeł) z HTML-a, selektor
+          jest zapisywany zgodnie z CSS. Tworzymy połączenie, np. const
+          nazwaZmiennej = document.querySelecetor('.selector'). Jeśli używamy
+          jQuery to metoda to $('.selector')
+        </p>
+        <p>
+          Dodanie klasy do używania w JS - korzystając z BEM - tworzymy
+          dodatkową klasę z modyfikatorem --js (ułatwia identyfikację/usuwa
+          potencjalne problemy)
+        </p>
+        <p>
+          nazwaZmiennejQuerySelector.innerHTML = 'tekst' - dodanie treści do
+          elementu w HTML
+        </p>
+      </section>
       <section class="section section--js"></section>
     </main>
     <footer class="footer">Wszystkie prawa zakazane przeze mnie</footer>
